@@ -3,20 +3,34 @@
     color: white;
     display: flex;
     flex-direction: column;
-   
     align-items: center;
-    height: 210px;
+    height: 170px;
+    @media (max-width: 599px) {
+        height: 120px;
+    }
 
     .footer_logo {
         width: 100px;
         height: 40px;
-        margin: 70px;
+        margin: 50px;
+        @media (max-width: 599px) {
+            width: 100px;
+            height: 30px;
+            margin: 20px;
+        }
+    }
+    p {
+        margin: 0px;
     }
 
     .footer_text {
         font-size: 18px;
         text-align: center;
-        margin-top: 5px;
+        display: flex;
+        @media (max-width: 599px) {
+            font-size: 10px;
+            flex-direction: column;
+        }
        
     }
 }
