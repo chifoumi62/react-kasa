@@ -1,0 +1,15 @@
+
+.home-banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.home_img {
+    object-fit: cover;
+    width: 90%;
+    height: 150px;
+    border-radius: 20px;
+    
+}
