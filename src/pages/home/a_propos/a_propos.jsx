@@ -1,8 +1,11 @@
+import Aproposbody from "../../../componenets/aproposbody"; 
+import AproposBanner from "../../../componenets/aproposBanner"; 
+
 function Apropos() {
   return (
-    <div>
-      <h1>À propos</h1>
-      <p>Voici un exemple de page à propos.</p>
+    <div className="a_propos">
+      <AproposBanner />
+      <Aproposbody />
     </div>
   );
 }

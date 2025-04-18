@@ -1,0 +1,41 @@
+.aproposbody {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 70%;
+    height: 100%;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 20px;
+}
+.aproposbody_text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    width: 100%;
+   
+}
+.article_apropos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    font-size: 10px;
+    color: white;
+    border: #f0f0f0 solid 1px;
+    border-radius: 10px;
+    background-color: #ff6060;
+}
+.apropos_button {
+    border:none;
+    background-color: transparent;
+    margin-right: 10px;
+}
+.description_apropos {
+    display: none;
+}
+    
