@@ -8,6 +8,12 @@
     padding-left: 150px;
     padding-right: 150px;
     margin-top: 20px;
+    @media (max-width: 599px) {
+        
+        padding-left: 50px;
+        padding-right: 50px;
+        width: 80%;
+    }
 }
 .aproposbody_text {
     display: flex;
@@ -35,7 +41,5 @@
     background-color: transparent;
     margin-right: 10px;
 }
-.description_apropos {
-    display: none;
-}
+
     
