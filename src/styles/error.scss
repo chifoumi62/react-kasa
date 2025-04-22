@@ -1,0 +1,29 @@
+.error {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .error_text {
+        font-size: 220px;
+        color:#ff6060;
+        font-weight: bold;  
+        text-align: center;
+        margin: 70px;
+        
+    }
+        
+        .error_p {
+            font-size: 2rem;
+            font-weight: bold;
+            color:#ff6060;
+            text-align: center;
+        }
+
+            .error_a {
+                color: black;
+                margin: 80px;
+            }
+            
+    
+}
