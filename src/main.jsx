@@ -8,7 +8,9 @@ import Header from './componenets/header.jsx'
 import Footer from './componenets/footer.jsx'
 import FicheLogement from './pages/home/fiche_logement/fiche_logement.jsx'  
 import Error from './componenets/Error.jsx' 
-import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'  
+import { BrowserRouter as Router,Routes,Route } from 'react-router-dom'     
+
+
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -17,7 +19,7 @@ createRoot(document.getElementById('root')).render(
         <Routes>
           <Route path="/" element={<App />} />
           <Route path="/a_propos" element={<Apropos />} />
-          <Route path="/fiche_logement" element={<FicheLogement />} />
+          <Route path="/fiche_logement/:id" element={<FicheLogement />} />
           <Route path="*" element={<Error/>} />
         </Routes>
       <Footer />

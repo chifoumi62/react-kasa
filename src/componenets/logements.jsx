@@ -1,5 +1,6 @@
-import '../data/logements_kasa.json';
+
 import '../styles/logements.scss';
+import { Link } from 'react-router-dom';
 
 const logements=[];
     fetch('src/data/logements_kasa.json')
@@ -12,14 +13,15 @@ const logements=[];
         console.error('Error fetching data:', error);
     });
 
+
 function Logements() {
   return (
     <div className="logements">
       {logements.map((logement) => (
-        <div key={logement.id} className="logement">
-          <img src={logement.cover} alt={logement.title} className='logement_img'/>
-          <h2 className='logement_title'>{logement.title}</h2>
-        </div>
+        <Link to={`/fiche_logement/${logement.id}`} key={logement.id} className="logement">
+          <img src={logement.cover} alt={logement.title} className="logement_img"/>
+          <h2 className="logement_title">{logement.title}</h2>
+        </Link>
       ))}
     </div>
   );
