@@ -3,7 +3,7 @@ import '../styles/logements.scss';
 import { Link } from 'react-router-dom';
 
 const logements=[];
-    fetch('src/data/logements_kasa.json')
+    await fetch('src/data/logements_kasa.json')
     .then((response) => response.json()) 
     .then((data) => {
         console.log(data);
@@ -12,7 +12,6 @@ const logements=[];
     .catch((error) => {
         console.error('Error fetching data:', error);
     });
-
 
 function Logements() {
   return (
