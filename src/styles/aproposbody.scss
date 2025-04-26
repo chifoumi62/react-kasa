@@ -1,3 +1,17 @@
+
+@mixin boutton {
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 100%;
+height: 45px;
+font-size: 10px;
+color: white;
+border: #f0f0f0 solid 1px;
+border-radius: 10px;
+background-color: #ff6060;
+}
+
 .aproposbody {
     display: flex;
     flex-direction: column;
@@ -25,16 +39,8 @@
    
 }
 .article_apropos {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    height: 45px;
-    font-size: 10px;
-    color: white;
-    border: #f0f0f0 solid 1px;
-    border-radius: 10px;
-    background-color: #ff6060;
+  
+    @include boutton;
 }
 .apropos_button {
     border:none;
