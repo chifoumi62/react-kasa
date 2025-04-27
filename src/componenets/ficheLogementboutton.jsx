@@ -8,7 +8,7 @@ function FicheLogementBoutton({ description}) {
         const arrow = document.querySelector(".arrow_descript");
         arrow.style.transform = arrow.style.transform === "rotate(180deg)" ? "rotate(0deg)" : "rotate(180deg)";
       }}>
-        <img src="src\assets\arrow_back_ios-24px at 2x.png" alt="arrow" className="arrow_descript"/>
+        <img src="src\assets\arrow_back_ios-24px 2@2x.png" alt="arrow" className="arrow_descript"/>
       </button>
     
     <div className="descript" style={{ display: "none" }}>

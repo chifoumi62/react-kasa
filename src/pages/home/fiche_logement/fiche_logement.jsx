@@ -40,8 +40,17 @@ function FicheLogement() {
               <img src={logement.host.picture} alt="Host" className="host_picture" />
             </div>
             <div className="fiche-logement-body__rating">
-              <h2>{logement.rating}</h2>
-              <img src="src\assets\star.png" alt="Star" className="star" />
+              <div className="stars">
+                {Array.from({ length: 5 }, (_, index) => (
+                  <img
+                    key={index}
+                    src={index < logement.rating ? "src/assets/star-active 1.png" : "src\assets\star-inactive 1 (2).png"}
+                    alt="star"
+                    className="star"
+                  />
+                ))}
+              </div>
+              
             </div>
           </div>
         </div>
