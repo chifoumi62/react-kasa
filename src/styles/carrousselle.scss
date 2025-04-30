@@ -6,7 +6,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    @media (max-width: 599px) {
+        
+        height: 200px;
+        margin: 20px;
     }
+  }
     
 
 .carrousselle_img {

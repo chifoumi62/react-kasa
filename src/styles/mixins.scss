@@ -1,0 +1,12 @@
+@mixin boutton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 45px;
+  font-size: 10px;
+  color: white;
+  border: #f0f0f0 solid 1px;
+  border-radius: 10px;
+  background-color: #ff6060;
+}
