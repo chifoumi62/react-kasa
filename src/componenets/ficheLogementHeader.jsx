@@ -23,7 +23,7 @@ function FicheLogementHeader({ logement }) {
                         {Array.from({ length: 5 }, (_, index) => (
                             <img
                             key={index}
-                            src={index < logement.rating ? "src/assets/star-active 1.png" : "src\assets\star-inactive 1 (2).png"}
+                            src={index < logement.rating ? "public\star-active .png" : "public\star-inactive.png"}
                             alt="star"
                             className="star"
                             />
