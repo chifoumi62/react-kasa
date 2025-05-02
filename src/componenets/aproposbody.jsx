@@ -1,4 +1,5 @@
 import '../styles/aproposbody.scss'
+import arrow from '../assets/arrow_open.png'
 
 const element2 = [
     {
@@ -38,7 +39,7 @@ function Aproposbody() {
                             const arrow = document.querySelector(`.arrow_apropos_${element.id}`);
                             arrow.style.transform = arrow.style.transform === "rotate(180deg)" ? "rotate(0deg)" : "rotate(180deg)";
                         }}>
-                            <img src="public\arrow_open.png" alt="arrow" className={`arrow_apropos arrow_apropos_${element.id}`} />
+                            <img src={arrow} alt="arrow" className={`arrow_apropos arrow_apropos_${element.id}`} />
                         </button>
                     </div>
                     <div className={`description_${element.id}`} style={{ display: "none" }}>

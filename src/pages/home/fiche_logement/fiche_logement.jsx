@@ -4,6 +4,7 @@ import FicheLogementBoutton from "../../../componenets/ficheLogementboutton";
 import FicheLogementBoutton2 from "../../../componenets/fichelogementboutton2";
 import FicheLogementHeader from "../../../componenets/ficheLogementHeader";
 import '../../../styles/fichelogement.scss';
+import StarRating from "../../../componenets/star";
 
 
 const logements = [];

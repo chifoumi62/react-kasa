@@ -1,3 +1,5 @@
+import arrow from '../assets/arrow_open.png'
+
 function FicheLogementBoutton2 ({ equipements }) {
     return (
         <div className="fiche-logement-body__equipements">
@@ -9,7 +11,7 @@ function FicheLogementBoutton2 ({ equipements }) {
                         const arrow = document.querySelector(".arrow_equip");
                         arrow.style.transform = arrow.style.transform === "rotate(180deg)" ? "rotate(0deg)" : "rotate(180deg)";
                     }}>
-                        <img src="public\arrow_open.png" alt="arrow" className="arrow_equip"/>
+                        <img src={arrow} alt="arrow" className="arrow_equip"/>
                     </button>
             </div>
                 <div className="equip" style={{ display: "none" }}>

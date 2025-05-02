@@ -1,3 +1,5 @@
+import arrow from '../assets/arrow_open.png'
+
 function FicheLogementBoutton({ description}) {
   return (
     <div className="fiche-logement-body__description">
@@ -9,7 +11,7 @@ function FicheLogementBoutton({ description}) {
             const arrow = document.querySelector(".arrow_descript");
             arrow.style.transform = arrow.style.transform === "rotate(180deg)" ? "rotate(0deg)" : "rotate(180deg)";
           }}>
-            <img src="public\arrow_open.png" alt="arrow" className="arrow_descript"/>
+            <img src={arrow} alt="arrow" className="arrow_descript"/>
           </button>
       </div>
     

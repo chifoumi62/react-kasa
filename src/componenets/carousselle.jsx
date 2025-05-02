@@ -1,5 +1,7 @@
 import {useState} from "react";
 import '../styles/carrousselle.scss';
+import arrowleft from '../assets/arrow_left.png'
+import arrowright from '../assets/arrow_right.png'
 
 
 function Carrousselle({pictures}) {
@@ -14,10 +16,10 @@ function Carrousselle({pictures}) {
             <img src={pictures[index]} alt={`Image ${index}`} className="carrousselle_img"/>
             <div className="carrousselle_buttons">
                     <button onClick={prev} className="carrousselle_buttons__prev">
-                        <img src="public\arrow_left.png" alt="arrow" className="arrow_prev"/>
+                        <img src={arrowright} alt="arrow" className="arrow_prev"/>
                     </button>
                     <button onClick={next} className="carrousselle_buttons__next">
-                        <img src="public\arrow_right.png" alt="arrow" className="arrow_next"/>
+                        <img src={arrowleft} alt="arrow" className="arrow_next"/>
                     </button>
             </div>
       </div>

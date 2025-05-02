@@ -1,3 +1,7 @@
+
+import StarRating from './star';
+
+
 function FicheLogementHeader({ logement }) {
   return (
     <div className="fiche-logement-body">
@@ -18,20 +22,7 @@ function FicheLogementHeader({ logement }) {
                         <h2>{logement.host.name}</h2>
                         <img src={logement.host.picture} alt="Host" className="host_picture" />
                     </div>
-                    <div className="fiche-logement-body__rating">
-                        <div className="stars">
-                        {Array.from({ length: 5 }, (_, index) => (
-                            <img
-                            key={index}
-                            src={index < logement.rating ? "public\star-active .png" : "public\star-inactive.png"}
-                            alt="star"
-                            className="star"
-                            />
-                        ))}
-                        </div>
-                        
-                    </div>
-                    
+                    <StarRating rating={logement.rating}/>
             </div>
     </div>
   );
