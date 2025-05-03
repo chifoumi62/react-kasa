@@ -6,9 +6,10 @@ function StarRating  ({ rating })  {
 
   const totalStars = 5;
   const stars = [];
+  const ratings=Number(rating);
 
   for (let i = 1; i <= totalStars; i++) {
-    if (i <= {rating}) {
+    if (i <= ratings) {
       stars.push(<img src={staract} alt="star" key={i} className="staract" />);
     } else {
       stars.push(<img src={starinact} alt="star" key={i} className="starinact" />);
