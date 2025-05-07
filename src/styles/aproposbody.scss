@@ -12,18 +12,22 @@
     padding-right: 150px;
     margin-top: 20px;
     @media (max-width: 599px) {
-        
         padding-left: 50px;
         padding-right: 50px;
         width: 80%;
+
     }
 }
+.aproposbody p {
+        padding-left: 20px;
+}  
+
 .aproposbody_text {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 30px;
+    margin-bottom: 5px;
     width: 100%;
    
 }

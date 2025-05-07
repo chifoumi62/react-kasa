@@ -29,7 +29,7 @@ function FicheLogement() {
         <FicheLogementHeader logement={logement} />
     </div>
     <div className="fiche-logement-body_description">
-      <FicheLogementBoutton description={logement.description} />
+      <FicheLogementBoutton logement={logement} />
       <FicheLogementBoutton2 equipements={logement.equipments} />
     </div>
     </div>

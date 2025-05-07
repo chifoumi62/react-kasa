@@ -28,21 +28,13 @@ const element2 = [
 
 function Aproposbody() {
     return (
-        <div className="aproposbody">
-            <div key={element2[0].id} className="aproposbody_text">
-                <Boutton element={element2[0]}/>
+        element2.map((element) => (
+            <div className="aproposbody">
+                <div key={element.id} className="aproposbody_text">
+                    <Boutton element={element}/>
+                </div>
             </div>
-            <div key={element2[1].id} className="aproposbody_text">
-                <Boutton element={element2[1]}/>
-            </div>
-            <div key={element2[2].id} className="aproposbody_text">
-                <Boutton element={element2[2]}/>
-            </div>
-            <div key={element2[3].id} className="aproposbody_text">
-                <Boutton element={element2[3]}/>
-            </div>
-            
-        </div>
+        ))
     )
 }   
 export default Aproposbody

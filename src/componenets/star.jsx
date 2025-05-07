@@ -10,9 +10,9 @@ function StarRating  ({ rating })  {
 
   for (let i = 1; i <= totalStars; i++) {
     if (i <= ratings) {
-      stars.push(<img src={staract} alt="star" key={i} className="staract" />);
+      stars.push(<img src={staract} alt="star" key={i} className="star" />);
     } else {
-      stars.push(<img src={starinact} alt="star" key={i} className="starinact" />);
+      stars.push(<img src={starinact} alt="star" key={i} className="star" />);
     }
   }
     return <div className="starcontainer">{stars}</div>;

@@ -3,12 +3,15 @@ import Boutton from './boutton';
 
 function FicheLogementBoutton({ logement}) {
   const element={
-    id:logement.id,
-    title:"description",
+    id:1,
+    title:"Description",
     description:logement.description
   }
+  
   return (
-    <Boutton element={element}/>
+    <div className='fiche-logement-body__description'>
+       <Boutton element={element}/>
+    </div>
   )
 }
 export default FicheLogementBoutton;
