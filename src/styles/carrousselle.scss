@@ -38,3 +38,15 @@
     border: none;
     background-color: transparent;
   }
+  .carrousselle_index {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    z-index: 3;
+    @media (max-width: 599px) {
+        display: none;
+    }
+  }
