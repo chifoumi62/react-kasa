@@ -20,10 +20,10 @@ function Carrousselle({pictures}) {
     }
     else{
   return (
-      <div className="carrousselle">
+      <div key= {index} className="carrousselle">
             <img src={pictures[index]} alt={`Image ${index+1}`} className="carrousselle_img"/>
             <div className="carrousselle_index">
-                {index + 1} / {pictures.length}
+                 {index + 1} / {pictures.length}
             </div>
             <div className="carrousselle_buttons">
                     <button onClick={prev} className="carrousselle_buttons__prev">
