@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 
 const logements=[];
-    await fetch('src/data/logements_kasa.json')
+    await fetch('/data/logements_kasa.json')
     .then((response) => response.json()) 
     .then((data) => {
         console.log(data);

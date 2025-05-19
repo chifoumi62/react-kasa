@@ -1,5 +1,5 @@
 import Carrousselle from "../../../componenets/carousselle";
-import { useParams} from "react-router-dom";
+import { useParams,Navigate} from "react-router-dom";
 import FicheLogementBoutton from "../../../componenets/ficheLogementboutton";
 import FicheLogementBoutton2 from "../../../componenets/fichelogementboutton2";
 import FicheLogementHeader from "../../../componenets/ficheLogementHeader";
@@ -8,7 +8,7 @@ import StarRating from "../../../componenets/star";
 
 
 const logements = [];
-await fetch('src/data/logements_kasa.json')
+ fetch('/data/logements_kasa.json')
   .then((response) => response.json()) 
   .then((data) => {
       console.log(data);
@@ -20,6 +20,11 @@ await fetch('src/data/logements_kasa.json')
 
 function FicheLogement() {
   const { id } = useParams();
+  const logement = logements.find((logement) => logement.id === id);
+  if (!logement) {
+    return <Navigate to="*"/>;
+  }
+  else{
   return (
     logements.filter((logement) => logement.id === id).map((logement) => (
       
@@ -35,4 +40,5 @@ function FicheLogement() {
     </div>
     ))
 )}
+}
 export default FicheLogement;

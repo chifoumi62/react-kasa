@@ -28,13 +28,13 @@ const element2 = [
 
 function Aproposbody() {
     return (
-        element2.map((element) => (
+        element2.map(element => 
             <div className="aproposbody">
                 <div key={element.id} className="aproposbody_text">
                     <Boutton element={element}/>
                 </div>
             </div>
         ))
-    )
+    
 }   
 export default Aproposbody
