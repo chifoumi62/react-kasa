@@ -26,15 +26,7 @@
             margin-right: 50px;
             
         }
-        /*.header_nav a {
-            color: black;
-            text-decoration: none;
-            font-size: 1em;
-            text-align: center;
-        }
-        .header_nav a:focus {
-            text-decoration: underline;
-        }*/
+    
     }
         .link {
             color: black;
@@ -43,6 +35,11 @@
             text-align: center;
         }
         .linkactive {
+             color: black;
+            text-decoration: none;
+            font-size: 1em;
+            font-weight: 600;
+            text-align: center;
             text-decoration: underline;
         }
     

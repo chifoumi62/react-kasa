@@ -1,11 +1,9 @@
 import Carrousselle from "../../../componenets/carousselle";
 import { useParams,Navigate} from "react-router-dom";
 import FicheLogementBoutton from "../../../componenets/ficheLogementboutton";
-import FicheLogementBoutton2 from "../../../componenets/fichelogementbouttonequip";
 import FicheLogementHeader from "../../../componenets/ficheLogementHeader";
 import '../../../styles/fichelogement.scss';
 import FicheLogementBouttonEquip from "../../../componenets/fichelogementbouttonequip"; 
-import StarRating from "../../../componenets/star";
 
 
 const logements = [];

@@ -21,7 +21,7 @@ function Boutton({ element }) {
             </div>
             {isOpen && (
                 <div className={`description_${element.id}`}>
-                    <p>{element.description}</p>
+                    <p className='animation_text'>{element.description}</p>
                 </div>
             )}
         </div>
