@@ -25,7 +25,6 @@ function FicheLogement() {
   }
   else{
   return (
-    logements.filter((logement) => logement.id === id).map((logement) => (
       
     <div className="fiche_logement" key={logement.id}>
       <Carrousselle pictures={logement.pictures}/>
@@ -37,7 +36,7 @@ function FicheLogement() {
       <FicheLogementBouttonEquip equipements={logement.equipments} />
     </div>
     </div>
-    ))
-)}
+    )
+}
 }
 export default FicheLogement;
