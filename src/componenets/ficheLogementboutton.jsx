@@ -1,4 +1,4 @@
-import arrow from '../assets/arrow_open.png'
+
 import Boutton from './boutton';
 
 function FicheLogementBoutton({ logement}) {

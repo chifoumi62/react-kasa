@@ -1,25 +1,33 @@
 import arrow from '../assets/arrow_open.png'
+import arrowClose from '../assets/arrow_close.png'
+import { useState } from 'react';
 
-function Boutton ({element}) {
-        return(
-                <div className="aproposbody_text">
-                    <div className="article_apropos">
-                        <h1>{element.title}</h1>
-                        <button className="apropos_button" onClick={() => {
-                            const description = document.querySelector(`.description_${element.id}`);
-                            description.style.display = description.style.display === "block" ? "none" : "block";
-                            const arrow = document.querySelector(`.arrow_apropos_${element.id}`);
-                            arrow.style.transform = arrow.style.transform === "rotate(180deg)" ? "rotate(0deg)" : "rotate(180deg)";
-                        }}>
-                            <img src={arrow} alt="arrow" className={`arrow_apropos_${element.id}`} />
-                        </button>
-                    </div>
-                    <div className={`description_${element.id}`} style={{ display: "none" }}>
-                        <p>{element.description}</p>
-                    </div>
+
+
+function Boutton({ element }) {
+    const [isOpen, setIsOpen] =useState(false);
+
+    const toggleDescription = () => {
+        setIsOpen(!isOpen);
+    };
+
+    return (
+        <div className="aproposbody_text">
+            <div className="article_apropos">
+                <h1>{element.title}</h1>
+                <button className="apropos_button" onClick={toggleDescription}>
+                    <img src={isOpen ? arrowClose : arrow} alt="arrow" className={`arrow_apropos_${element.id}`} />
+                </button>
+            </div>
+            {isOpen && (
+                <div className={`description_${element.id}`}>
+                    <p>{element.description}</p>
                 </div>
             )}
-export default Boutton
+        </div>
+    );
+}
+export default Boutton;
 
             
     
