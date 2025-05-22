@@ -26,15 +26,15 @@ function FicheLogement() {
   else{
   return (
       
-    <div className="fiche_logement" key={logement.id}>
+    <div className="fiche_logement">
       <Carrousselle pictures={logement.pictures}/>
-    <div className="fiche-logement-header">
-        <FicheLogementHeader logement={logement} />
-    </div>
-    <div className="fiche-logement-body_description">
-      <FicheLogementBoutton logement={logement} />
-      <FicheLogementBouttonEquip equipements={logement.equipments} />
-    </div>
+      <div className="fiche-logement-header">
+          <FicheLogementHeader logement={logement} />
+      </div>
+      <div className="fiche-logement-body_description">
+        <FicheLogementBoutton logement={logement} />
+        <FicheLogementBouttonEquip equipements={logement.equipments} />
+      </div>
     </div>
     )
 }
