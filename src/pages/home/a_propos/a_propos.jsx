@@ -1,6 +1,5 @@
-import Aproposbody from "../../../componenets/aproposbody"; 
-import AproposBanner from "../../../componenets/aproposBanner"; 
-
+import Aproposbody from "../../../componenets/aproposbody";
+import AproposBanner from "../../../componenets/aproposBanner";
 
 function Apropos() {
   return (

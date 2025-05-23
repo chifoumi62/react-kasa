@@ -126,19 +126,16 @@
   .fiche-logement-body__description , .fiche-logement-body__equipements {
     width: 100%;
   }
-  .fiche-logement-body__description {
-    margin-left: 5px;
-  }
-  .fiche-logement-body__description p {
-    padding-left: 20px;
-  }
-  
   .equipement{
     list-style-type: none;
-    padding-left: 0px;
+    padding-right: 350px;
     margin: 0px;
-    margin-left: 0px;
+    @media (max-width: 599px) {
+      padding-right: 180px;
+      margin: 0px;
+    }
   }
+  
   
   
   

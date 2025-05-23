@@ -2,12 +2,12 @@ import HomeBanner from "../../componenets/homeBanner.jsx";
 import Logements from "../../componenets/logements.jsx";
 
 function App() {
- return (
+  return (
     <div className="home">
       <HomeBanner />
-      <Logements/>
+      <Logements />
     </div>
-    )
+  );
 }
 
-export default App
+export default App;
